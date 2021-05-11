@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="TEMP.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+</head>
+
+<body>
+    <div class="bodyimg"></div>
+    <div class="main">
+        <div class="navbar">
+            <div class="nav_head">Spring Sale! <a href=""> Join 19,821 others </a> in slam dunking their JavaScript.</div>
+            <div class="clock" id="cloc">
+                <div id="hour"></div>
+                <div>:</div>
+                <div id="minutes">00</div>
+                <div>:</div>
+                <div id="second">0</div>
+            </div>
+        </div>
+        <script>
+            let mydate = document.getElementById("hour");
+            setInterval(function() {
+                let mydate = new Date();
+                mydate.innerText = mydate.getHours() + " : " + mydate.getMinutes();
+            }, 1000);
+            let myhour = 1;
+            let obj2 = document.getElementById("hour");
+
+            setInterval(function() {
+                if (myhour >= 12) {
+                    myhour = 1;
+                } else {
+                    obj2.innertext = myhour;
+                    myhour++;
+                }
+            }, 1000 * 60 * 60)
+
+            let myminute = 1;
+            let obj1 = document.getElementById("minutes");
+
+            setInterval(function() {
+                if (myminute >= 60) {
+                    myminute = 1;
+                } else {
+                    obj1.innerText = myminute;
+                    myminute++;
+                }
+            }, 1000 * 60)
+
+            let myseconds = 0;
+            let obj = document.getElementById("second");
+
+            setInterval(function() {
+                if (myseconds >= 60) {
+                    myseconds = 0;
+                } else {
+                    obj.innerText = myseconds;
+                    myseconds++;
+                }
+            }, 1000)
+        </script>
+    </div>
+    </div>
+    <div class="content">
+        <div class="blue_back">
+            <div class="heading">
+                <p>The best way to learn server-side JavaScript!</p>
+                <div class="head_cont">
+                    <div class="head_back"> </div>
+                    <div class="text-letter">L</div>
+                    <div class="text-letter">E</div>
+                    <div class="text-letter">A</div>
+                    <div class="text-letter">R</div>
+                    <div class="text-letter">N</div>
+                    <div class="text-letter">N</div>
+                    <div class="text-letter">O</div>
+                    <div class="text-letter">D</div>
+                    <div class="text-letter">E</div>
+                    <div class="text-letter">!</div>
+                </div>
+                <p class="paragraph">A premium training course to learn to build apps with Node.js, Express, MongoDB, and friends.</p>
+                <span class="border"></span>
+                <div class="section">
+                    <div class="section2">
+                        <h1>Start Learning Now →</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="horizo_box">
+            <div class="box">
+                <video src="images,video/747264728.mp4" controls></video>
+                <div class="flex">
+                    <h1>Learn to build applications and APIs with Node.js</h1>
+                    <p>Node.js, Express, MongoDB and friends are some of the most in-demand web development skills. This course is the cumulation of everything I've learned building dozens of Node.js applications over the past five years.</p>
+                    <p>With a focus on modern JavaScript and real world application, Learn Node is an efficient way to add server side JavaScript to your skill-set and start building the applications you have been dreaming about.</p>
+                    <p>Join me as I show you how to build full stack applications and APIs from start to finish with some of today's top JavaScript technology.</p>
+                    <div class="section11">
+                        <div class="section12">
+                            <h1>Buy The Course →</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <ul class="list_icon">
+                <li><img src="images,video/node.png" alt=""></li>
+                <li><img src="images,video/mongo.png" alt=""></li>
+                <li><img src="images,video/googlemaps.png" height="70px" alt=""></li>
+                <li><img src="images,video/passport.png" alt=""></li>
+                <li><img src="images,video/express.png" alt=""></li>
+                <li><img src="images,video/sass.png" alt=""></li>
+                <li><img src="images,video/pug.png" width="5px" height="50px" alt=""></li>
+                <li><img src="images,video/webpack.png" alt=""></li>
+                <li><img src="images,video/es6.png" width="5px" height="50px" alt=""></li>
+                <li><img src="images,video/tv.png" width="5px" height="50px" alt=""></li>
+            </ul>
+        </div>
+        <div class="section3_back">
+            <div class="heading22">
+                <h1>What Will You Build?</h1>
+            </div>
+            <div class="section3">
+
+                <p>Together we will build "Now That's Delicious!", a full stack restaurant application which users can search, geolocate, review and curate their favourite restaurants from around the world.</p>
+
+                <p> The application has three main models — Users, Stores and Reviews — all of which are relational. It is designed to hit upon many of today's application needs such as user authentication, database storage, Ajax REST API, file upload and
+                    image resizing.
+                </p>
+
+                <p> Check out the live application here or see a comprehensive listing of all topics covered below.
+                </p>
+                <div class="lap_phn">
+                    <div class="flex-image">
+                        <img class="image1" src="images,video/laptop.png" width="1000px" alt="">
+                        <video playsinline muted autoplay class="video1" src="images,video/video-laptop.mp4"></video>
+                    </div>
+                    <div class="flex-image">
+                        <img class="image2" src="images,video/phone.png" width="220px" alt="">
+                        <video playsinline muted autoplay class="video2" src="images,video/video-phone.mp4"></video>
+                    </div>
+                </div>
+
+                <!-- <div class="flex-image">
+                    <img class="image1" src="laptop.png" width="1000px" alt="">
+                    <video playsinline muted autoplay class="video1" src="video-laptop.mp4"></video>
+                    <img class="image2" src="phone.png" width="220px" alt="">
+                    <video playsinline muted autoplay class="video2" src="video-phone.mp4"></video>
+                </div> -->
+                <div class="video-speed">
+                    <label for="video-speed">
+                        <input type="range" min="0.05" max="1" step="0.05" value="1" name="video-speed" oninput="document.querySelectorAll('.flex-image video').forEach((vid) => { vid.playbackRate = this.value })" class="playback__slider">
+                    </label>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="section4">
+            <p> <b> Sweet Code!</b> — The code in the application has been reviewed and influenced by some of our industry's best Node.js developers.</p>
+            <div class="sweet_code_cont">
+                <div class="sweet_code">
+                    <img src="images,video/sweet code1.jpg" width="100px" alt="">
+
+                    <h2>Jed JedWatson
+                        <a href="">@JedWatson</a> </h2>
+                    <p>JavaScript developer creator of Keystone JS which is a CMS built on top of Express. Elemental UI and Touchstone JS. Co-host of React Sydney and the React Podcast.</p>
+                </div>
+                <div class="sweet_code">
+                    <img src="images,video/sweet code2.jpeg" width="100px" alt="">
+
+                    <h2> Jamund Ferguson
+                        <a href="">@xjamundx</a> </h2>
+                    <p>JavaScript Engineer at PayPal. Has done a lot of research into async + await with Node.js and is a key advisor to how the error handling is done in this course.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section5">
+            <h1>YOU'LL LEARN WITH MODERN JAVASCRIPT</h1>
+        </div>
+        <div class="section6">
+            <img src="images,video/async-await.png" width="40%" alt="">
+            <div class="matter">
+                <p> You'll learn with the latest and greatest updates to JavaScript.</p>
+                <p> <b> ES2017 Async + Await</b> allows us to craft easy to read, logical flows without relying on external flow control libraries, chaining multiple promises, or writing spaghetti code by nesting callbacks.</p>
+                <p> <b> ES6 features</b> are heavily used throughout the course — from destructuring to arrow functions you'll get to see how to implement these new features in real world scenarios.</p>
+            </div>
+        </div>
+        <p class="bottom_matter">Wondering where the try / catch is in the screenshot? Join the course to see how we handle errors with something called <b>function composition.</b></p>
+        <div class="section7">
+            <div class="box">
+                <img src="images,video/square-small.jpg" width="100px" alt="">
+                <div class="matterbox">
+                    <h1>MEET WES BOS</h1>
+                    <p> Wes Bos is a Full Stack Developer, Speaker and Teacher from Canada. He works as an independent web developer and teaches as a lead instructor with HackerYou. Wes has taught over 500 students in 200+ classes and spoken at dozens of
+                        conferences around the world.
+                    </p>
+                    <p> Wes is the author of React For Beginners, ES6 for Everyone and Sublime Text Power User which together have sold over 25,000 copies. He is also the author of JavaScript30.com, LearnRedux.com, Flexbox.io and Command Line Power User,
+                        a set of free video series. 145,000 people have taken at least one of Wes' free video courses.</p>
+                </div>
+                <a href="https://learnnode.com/">Follow @wesbos</a>
+            </div>
+        </div>
+        <div class="section8">
+            <div class="box1">
+                <div class="wh_bg_one">
+                    <h1>Who is this for?</h1>
+                </div>
+                <div class="num_one">
+                    <div class="tilt_one">
+                        <div class="one_cont">
+                            <ul class="one_list">
+                                <p> Almost anyone who is looking to get stronger with JavaScript. We start beginner and go pretty deep.</p>
+                                <br>
+                                <p> Advanced devs will be able to go through the course a little more quickly, but I've designed this course to be as approachable as possible.</p>
+                                <br>
+                                <p> This course is done in ES6 so there is liberal use of arrow functions, template strings, destructuring and other ES6 goodies. If you haven't done much ES6, you'll have an easier time with the course if you do at
+                                    <p> least the first half of my ES6 for Everyone course first.</p>
+                                    <br>
+                                    <p> This isn't JavaScript 101. You should have knowledge of how functions, variables, Objects, Arrays and other fundamentals work.</p>
+                                    <br>
+                                    <li>Front End Devs looking to go Full Stack</li>
+                                    <li>Existing server side developers looking to understand the Node stack.</li>
+                                    <li> WordPress developers looking for a little more control</li>
+                                    <li> JS developers looking to advance their career.</li>
+                                    <li>Existing Node.js developers looking to fill in any gaps and update to modern workflows and design patterns.</li>
+                                    <li> Anyone who wants to get better at JavaScript and learns well from seeing both fundamental and advanced concepts in practice.</li> <br>
+                                    <li>Not sure if it's for you?</li>
+                                    <li> 100% money back if you don't think it's a good fit 💰</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box2">
+                <div class="wh_bg_two">
+                    <h1>Covered Concepts</h1>
+                </div>
+                <div class="num_two">
+                    <div class="tilt_two">
+                        <div class="two_cont">
+                            <p> In each video, we learn and implement a concept into our application. Many of the concepts we return to over and over for different parts of the application, hitting and solving new problems each time.<br> <br> This course
+                                covers a ton. Along with general JavaScript best practices, here are some of the things you can expect to learn:</p>
+                            <ul class="two_list">
+                                <li> User Accounts</li>
+                                <li>Database Schemas</li>
+                                <li>Templating and Mixins</li>
+                                <li>Middleware</li>
+                                <li>Password Reset Flow</li>
+                                <li>Routing</li>
+                                <li>Error Handling</li>
+                                <li>File Uploading</li>
+                                <li>MVC Pattern</li>
+                                <li>Pagination</li>
+
+                            </ul>
+                            <ul class="two_list">
+                                <li>REST API endpoints</li>
+                                <li>Document Relationships</li>
+                                <li>Restricting Operations</li>
+                                <li>Image Resizing</li>
+                                <li>toring Geospatial Data</li>
+                                <li>Flow Control</li>
+                                <li>Advanced DB Queries</li>
+                                <li>Sending Email</li>
+                                <li>Geocoding Addresses</li>
+                                <li>Server Deployment</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sec8_head">
+            <h1>👌 Video pacing is just right</h1>
+            <h1>fast enough to keep you interested without passing by or assuming any details.</h1>
+
+            <h5> Seriously, it won't put you to sleep - I'm even funny sometimes.</h5>
+        </div>
+        <div class="section9">
+            <div class="crossout">
+                <span>FOO</span>
+            </div>
+            <div class="crossout">
+                <span>BAR</span>
+            </div>
+            <div class="crossout">
+                <span>BAZ</span>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
